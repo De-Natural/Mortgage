@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Mortgage repayment calculator</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+  <link rel="stylesheet" href="/index.css">
+</head>
+
+<body>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+    Coded by <a href="#">Ananimous</a>.
+  </div>
+  <div class="container">
+    <div class="white-form">
+      <h2>Mortgage calculator</h2>
+      <a href="#" id="clear">Clear All</a>
+      <p>Mortgage Amount</p>
+      <div class="pillar1">
+        <span id="span">$</span>
+        <input type="number" id="first">
+      </div>
+      <div class="pillar2">
+        <div class="div">
+          <p>Mortgage term</p>
+          <div class="input">
+            <input type="number" id="years">
+            <span>years</span>
+          </div>
+        </div>
+        <div class="div">
+          <p>interest rate</p>
+          <div class="input">
+            <input type="number" id="percentage">
+            <span>%</span>
+          </div>
+        </div>
+      </div>
+      <div class="pillar3">
+        <p>Mortgage type</p>
+        <label for="radio" id="repay">
+          <input type="radio" id="radio" name="paymentType">
+          <span>repayment</span>
+        </label>
+        <label for="rally" id="inter">
+          <input type="radio" id="rally" name="paymentType">
+          <span>interest only</span>
+        </label>
+      </div>
+      <button type="submit"><img src="/assets/images/icon-calculator.svg" alt="">Calculator Repayment</button>
+    </div>
+    <div class="blue-form">
+      <div class="poster">
+        <div class="image"></div>
+        <div class="write">
+          <h3>Result shown here</h3>
+          <p>Complete the form and click 'calculate Repayment' to show the Result</p>
+        </div>
+      </div>
+      <div class="cover">
+        <h2>Your result</h2>
+        <p>Your results are shown below based on the the information you provided. To adjust the results, edit the form
+          and click "calculate repayments" again.
+        </p>
+        <div class="box">
+          <p>Your monthly repayments</p>
+          <input type="number" disabled id="monthly">
+          <p>Total you 'll repay over the team</p>
+          <input type="number" disabled id="total">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="/index.js"></script>
+</html>
