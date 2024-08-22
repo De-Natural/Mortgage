@@ -7,11 +7,11 @@ const percentage = document.getElementById('percentage');
 const btn = document.querySelector('button');
 const monthly = document.getElementById('monthly');
 const Total = document.getElementById('total');
-const cover = document.querySelector('cover');
+const cover = document.querySelector('.cover');
+const poster = document.querySelector('.poster');
 // console.log();
 
 btn.addEventListener('click',()=>{
-    cover.style.display = 'flex'
    
     const selectedPaymentType = document.querySelector('input[name="paymentType"]:checked');
 
@@ -24,7 +24,16 @@ btn.addEventListener('click',()=>{
     } else {
         console.log("selectedPaymentType.");
     }
-    
+
+    const posterDisplay = poster.style.display || getComputedStyle(poster).display;
+    const coverDisplay = cover.style.display || getComputedStyle(cover).display;
+
+    if (posterDisplay === 'flex') {
+        cover.style.display = 'flex';
+        poster.style.display = 'none';
+    } else {
+        console.log('poster is not visible or another issue occurred.');
+    }
 })
 
 function labelFunction() {
