@@ -238,7 +238,78 @@ button img{
 
 
 
+
+@media screen and (max-width: 320px) {
+    .blue-form{
+        min-height: 90vh;
+    }
+}
+
+
+
 @media screen and (max-width: 960px) {
+    .container{
+        height: 100vh;
+        flex-direction: column;
+        gap: 20px;
+        /* border: 1px solid red; */
+    }
+    .white-form{
+        width: 100%;
+    }
+    .pillar2{
+        height: 130px;
+        flex-direction: column;
+    }
+    .div{
+        width: 100%;
+    }
+    .div p{
+        margin-top: 10px;
+    }
+    #percentage, #years{
+        width: 100%;
+    }
+    button{
+        margin: 30px auto;
+        width: 80%;
+    }
+    .blue-form{
+        width: 100%;
+        border-radius: 0;
+    }
+    .cover{
+        height: 300px;
+        gap: 10px;
+        margin: 30px;
+        margin-top: 10vh;
+    }
+    .box{
+        height: 150px;
+        padding: 10px;
+        gap: 5px;
+    }
+    #monthly, #Total{
+        width: 100%;
+    }
+    .box i{
+        top: 58%;
+    }
+    .poster>p{
+        margin-top: 50vh;
+    }
+    .write{
+        display: none;
+    }
+    
+    .image{
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width: 760px) {
     .container{
         height: 150vh;
         flex-direction: column;
@@ -270,9 +341,10 @@ button img{
         border-radius: 0;
     }
     .cover{
-        height: 350px;
+        height: 450px;
         gap: 10px;
         margin: 30px;
+        margin-top: 10vh;
     }
     .box{
         height: 150px;
@@ -283,6 +355,16 @@ button img{
         width: 100%;
     }
     .box i{
-        margin-top: 45px;
+        top: 50%;
+    }
+    .poster>p{
+        margin-top: 50vh;
+    }
+    .write{
+        display: none;
+    }
+    
+    .image{
+        display: none;
     }
 }
